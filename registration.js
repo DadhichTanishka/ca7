@@ -15,7 +15,7 @@ function Form() {
   const { name, email, password, password2 } = formData;
 
   const handleChange = e =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    (setFormData({ ...formData, [e.target.name]: e.target.value }));
 
   const handleSubmit = e => {
     e.preventDefault();
